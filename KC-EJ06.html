@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <script>
+            var num1 = prompt("Por favor, introduce el primer numero a comparar:");
+            var num2 = prompt("Ahora, introduce el segundo numero a comparar:");
+
+            function compara_menor(num1, num2) {
+               return num1 < num2;
+            }
+
+            function compara_mayor(num1, num2) {
+               return num1 > num2;
+            }
+
+            function iguales(num1, num2) {
+               return num1 == num2;
+            }
+
+            function distintos(num1, num2) {
+               return num1 !== num2;
+            }
+        </script>
+    </head>
+    <body>
+        <h3>Ejercicio Javascript 06</h3>
+        <script>
+            document.write(num1 + " < " + num2 + " = " + compara_menor(num1, num2) + "</br>");
+            document.write(num1 + " > " + num2 + " = " + compara_mayor(num1, num2) + "</br>");
+            document.write(num1 + " y " + num2 + " son iguales = " + iguales(num1, num2) + "</br>");
+            document.write(num1 + " y " + num2 + " son distintos = " + distintos(num1, num2));
+        </script>
+    </body>
+</html>
