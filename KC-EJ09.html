@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <script>
+            var cantidad = prompt("Por favor, introduce la cantidad a convertir:");
+            var cambio = prompt("Ahora, seleccione el tipo de cambio. /n Introduzca 1 para cambiar de EUR a USD /n y 2 para cambiar de USD a EUR.");
+            var dolar = cantidad * 0.995940;
+            var euro = cantidad / 0.995940;
+            
+            function calculaCambio(n1, n2) {
+                    if (n2 == 1) {
+                        return document.write("$" + dolar.toPrecision(4) + " USD");
+                    } else if (n2 == 2){
+                        return document.write("€" + euro.toPrecision(4) + " EUR");
+                    } else {
+                        return document.write("El numero introducido no es correcto.");
+                    }
+                }
+        </script>
+    </head>
+    <body>
+        <h3>Ejercicio Javascript 09</h3>
+        <script>
+            calculaCambio(cantidad, cambio);
+        </script>
+    </body>
+</html>
