@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <script>
+            var nota1 = prompt("Por favor, introduce tu primera nota:");
+            var nota2 = prompt("Ahora, introduce la segunda nota:");
+            var nota3 = prompt("Por ultimo introduce la tercera nota:");
+            var media = haceMedia(nota1, nota2, nota3);
+            
+            function haceMedia(n1, n2, n3) {
+                return (parseInt(n1) + parseInt(n2) + parseInt(n3)) / 3;
+            }
+
+            var resultado = media.toPrecision(2);
+
+            function aprobado() {
+                if (resultado >= 5) {
+                    return document.write("Tu media es de " + resultado + ", con lo cual estas aprobado.");
+                } else {
+                    return document.write("Tu media es de " + resultado + ", con lo cual estas suspendido.");
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <h3>Ejercicio Javascript 07</h3>
+        <script>
+            aprobado();
+        </script>
+    </body>
+</html>
