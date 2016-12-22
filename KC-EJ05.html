@@ -6,8 +6,8 @@
             var mes2 = prompt("Introduce el segundo mes de nacimiento:");
             var anyo2 = prompt("Por ultimo, introduce el segundo año de nacimiento:");
 
-            function compara(m1, a1, m2, a2){
-                if (m1 !== m2 && a1 !== a2) {
+            function comparaFechas (m1, a1, m2, a2){
+                if (m1 == m2 && a1 == a2) {
                     return document.write("true");
                 } else {
                     return document.write("false");
@@ -18,7 +18,7 @@
     <body>
         <h3>Ejercicio Javascript 05</h3>
         <script>
-            compara(mes1, anyo1, mes2, anyo2);
+            comparaFechas(mes1, anyo1, mes2, anyo2);
         </script>
     </body>
 </html>
