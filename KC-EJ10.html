@@ -11,16 +11,35 @@
                 "Star Wars - Episodio VI - El retorno del Jedi.",
                 "Star Wars - Episodio VII - El despertar de la fuerza."
             ];
-            
-            function seleccionaPeli(n1) {
-                return pelis[n1];
-            } 
+        
         </script>
     </head>
     <body>
         <h3>Ejercicio Javascript 10</h3>
         <script>
-            seleccionaPeli(elige);
+            switch (elige){
+                case 1:
+                    document.write(pelis[0]);
+                    break;
+                case 2:
+                    document.write(pelis[1]);
+                    break;
+                case 3:
+                    document.write(pelis[2]);
+                    break;
+                case 4:
+                    document.write(pelis[3]);
+                    break;
+                case 5:
+                    document.write(pelis[4]);
+                    break;
+                case 6:
+                    document.write(pelis[5]);
+                    break;
+                case 7:
+                    document.write(pelis[6]);
+                    break;
+            }
         </script>
     </body>
 </html>
