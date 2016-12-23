@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <script>
+            var num1 = prompt("Por favor, introduce el primer numero:");
+            var num2 = prompt("Ahora, introduce el segundo numero:");
+            var num3 = prompt("Por ultimo, introduce el tercer numero:");
+            var numeros = new Array();
+            
+            numeros.push(num1);
+            numeros.push(num2);
+            numeros.push(num3);
+
+            numeros.sort(function (a, b){
+                return b - a;
+            })
+
+        </script>
+    </head>
+    <body>
+        <h3>Ejercicio Javascript 11</h3>
+        <script>
+            document.write("El mayor es " + numeros[0] + " y el menor es " + numeros[2]);
+        </script>
+    </body>
+</html>
