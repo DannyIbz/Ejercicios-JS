@@ -2,42 +2,35 @@
     <head>
         <script>
             var elige = prompt("Elige un episodio de Star Wars del 1 al 7 para ver el título:");
-            var pelis = [
-                "Star Wars - Episodio I - La amenaza fantasma.",
-                "Star Wars - Episodio II - El ataque de los clones.",
-                "Star Wars - Episodio III - La venganza de los Sith.",
-                "Star Wars - Episodio IV - Una nueva esperanaza.",
-                "Star Wars - Episodio V - El Imperio Contraataca.",
-                "Star Wars - Episodio VI - El retorno del Jedi.",
-                "Star Wars - Episodio VII - El despertar de la fuerza."
-            ];
-        
         </script>
     </head>
     <body>
         <h3>Ejercicio Javascript 10</h3>
         <script>
-            switch (elige){
+            switch (parseInt(elige)){
+                default:
+                    document.write("Este episodio aun no ha sido rodado.");
+                    break;
                 case 1:
-                    document.write(pelis[0]);
+                    document.write("Star Wars - Episodio I - La amenaza fantasma.");
                     break;
                 case 2:
-                    document.write(pelis[1]);
+                    document.write("Star Wars - Episodio II - El ataque de los clones.");
                     break;
                 case 3:
-                    document.write(pelis[2]);
+                    document.write("Star Wars - Episodio III - La venganza de los Sith.");
                     break;
                 case 4:
-                    document.write(pelis[3]);
+                    document.write("Star Wars - Episodio IV - Una nueva esperanaza.");
                     break;
                 case 5:
-                    document.write(pelis[4]);
+                    document.write("Star Wars - Episodio V - El Imperio Contraataca.");
                     break;
                 case 6:
-                    document.write(pelis[5]);
+                    document.write("Star Wars - Episodio VI - El retorno del Jedi.");
                     break;
                 case 7:
-                    document.write(pelis[6]);
+                    document.write("Star Wars - Episodio VII - El despertar de la fuerza.");
                     break;
             }
         </script>
