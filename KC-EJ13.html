@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <script>
+            var num1 = prompt("Introduce un numero del 1 al 20:");
+            var num2 = prompt("Ahora, introduce otro numero del 1 al 20:");
+
+            var lista = new Array;
+
+            for (i=1; i<21; i++){
+                lista.push(i);
+            }
+
+            var resultado = lista.slice((parseInt(num1) - 1), num2);
+        </script>
+    </head>
+    <body>
+        <h3>Ejercicio Javascript 13</h3>
+        <script>
+            if (num1 <= 20 && num2 <= 20){
+                document.write(resultado);
+            } else {
+                document.write("El rango debe ser de 1 a 20.");
+            }
+        </script>
+    </body>
+</html>
