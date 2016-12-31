@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <script>
+            var nombres = [
+                {key:"pedro", value:"pedro.picapiedra@gmail.com"},
+                {key:"pablo", value:"pmarmol123@gmail.com"},
+                {key:"bob", value:"bob@gmail.com"}
+            ];
+            var nombre = prompt("Introduce un nombre para conocer su direccion de correo electronico:")
+        </script>
+    </head>
+    <body>
+        <h3>Ejercicio Javascript 17</h3>
+        <script>
+            if (nombre.toLowerCase() === Object.keys(nombres)) {
+                document.write(Object.keys(nombres));
+            } else {
+                document.write("No exite un contacto valido para el nombre " + nombre + ".");
+            }
+        </script>
+    </body>
+</html>
