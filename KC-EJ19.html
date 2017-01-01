@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <script>
+            var numeros = new Array;
+
+            for (i=0; i<10; i++) {
+                var numero = prompt("Introduce un numero:");
+                if (parseInt(numero) % 2 === 0) {
+                    numeros.push(numero);
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <h3>Ejercicio Javascript 19</h3>
+        <script>
+            document.write("Son pares: " + numeros);
+        </script>
+    </body>
+</html>
