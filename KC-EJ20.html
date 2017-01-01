@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <script>
+            var numero = prompt("Introduce un numero aleatorio a sumar:");
+
+            var numeros = new Array;
+            for (i=1; i<(parseInt(numero)+1); i++){
+                numeros.push(i);
+            }
+
+            var total = numeros.reduce(function(a, b) {
+                return a + b;
+            }, 0);
+
+        </script>
+    </head>
+    <body>
+        <h3>Ejercicio Javascript 20</h3>
+        <script>
+            document.write(numeros.join(" + ") + " = " + total);
+        </script>
+    </body>
+</html>
