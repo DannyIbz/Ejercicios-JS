@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <script>
+            var numero = prompt("Introduce un numero para ver su tabla de multiplicar:");
+
+            var numeros = new Array;
+            for (i=1; i<(11); i++){
+                var resultado = numero * i;
+                numeros.push(numero + " x " + i + " = " + resultado + "</br>");
+            }
+        </script>
+    </head>
+    <body>
+        <h3>Ejercicio Javascript 21</h3>
+        <script>
+            document.write(numeros.join("\n"));
+        </script>
+    </body>
+</html>
